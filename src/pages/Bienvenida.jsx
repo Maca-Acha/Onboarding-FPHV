@@ -17,7 +17,7 @@ export default function Bienvenida() {
                 </div>
                 <div className='cont-button-home'>
                     <div>
-                        <Link className='btn-ver-mas'>Ver mas tarde</Link>
+                        <Link to='/conociendo' className='btn-ver-mas'>Ver mas tarde</Link>
                     </div>
                 </div>
             </div>
