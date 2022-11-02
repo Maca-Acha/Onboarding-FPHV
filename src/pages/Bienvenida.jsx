@@ -1,4 +1,4 @@
-export default function Video_bienvenida() {
+export default function Bienvenida() {
     return (
         <div className='back-white'>
             <div className="cont">
