@@ -31,19 +31,19 @@
 /* BOTONES */
 .cont-button-home{
   width: 20%;
-  height: 95%;
+  height: 90%;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+
 }
 .button-comenzar{
   color: #A61A32;
-  width: 231px;
-  height: 64.65px;
+  padding: 1rem ;
   background: #F9F9F9;
   border: 2.58582px solid #000000;
   border-radius: 12.0672px;
-  align-items: flex-end;
+
 }
 .button-comenzar:hover{
   color: #401D8A !important;
