@@ -14,7 +14,7 @@ export default function Home() {
                     </div>
                     <div className='cont-button-home'>
                         <div>
-                            <Link className='button-comenzar'>Comenzar el recorrido</Link>
+                            <Link to='/bienvenida' className='button-comenzar'>Comenzar el recorrido</Link>
                         </div>
                     </div>
                 </div>

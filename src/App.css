@@ -43,12 +43,43 @@
   background: #F9F9F9;
   border: 2.58582px solid #000000;
   border-radius: 12.0672px;
-
+  transition: .5s;
 }
 .button-comenzar:hover{
   color: #401D8A !important;
   border: 2.58582px solid #000000 !important;
   box-shadow: 3.44776px 3.44776px 0px #000000 !important;
+  transition: .5s;
+}
+.btn-volver{
+  color: #A61A32;
+  display: flex ;
+  align-items: center;
+  justify-content: center;
+  margin-top: 4vh;
+}
+.volver{
+  color: #A61A32;
+  padding-left: 1vw;
+  padding-right: 1vw;
+  transition: .5s;
+}
+.btn-volver:hover, .volver:hover{
+  color: #401D8A;
+  transition: .5s;
+}
+.volver:hover{
+  padding-left: 1.5vw;
+  padding-right: .5vw;
+  transition: .5s;
+}
+.btn-ver-mas{
+  color: #070707;
+  transition: .3s;
+}
+.btn-ver-mas:hover{
+  color: #A61A32;
+  transition: .3s;
 }
 
 /* HOME */
