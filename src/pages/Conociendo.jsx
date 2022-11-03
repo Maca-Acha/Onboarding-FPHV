@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom"
 
-
 const btns_conociendo = [
     {nombre: "Quienes Participamos", path:'/quines-participamos', id:'participamos'},
     {nombre: "Nuestra Historia", path:'/nuestra-historia', id:'historia'},
@@ -11,8 +10,10 @@ const btns_conociendo = [
 export default function Conociendo() {
     return (
         <div className='back-white'>
-            <div className="cont info-home">
-                <h2 className="titles">Conociendo la Fundación</h2>
+            <div className="back-conociendo info-home ">
+                <Link to='/' >
+                    <h2 className="titles">Conociendo la Fundación</h2>
+                </Link>
                 <div className="cont-btn-generals">
                     {btns_conociendo.map(btn => {
                         return(
@@ -22,7 +23,7 @@ export default function Conociendo() {
                         )
                     })}
                 </div>
-                <h4 className="titles">¡Te compartimos esta información para que estés preparado para comenzar a trabajar en equipo!</h4>
+                <h4 className="titles text-conociendo">¡Te compartimos esta información para que estés preparado para comenzar a trabajar en equipo!</h4>
             </div>
         </div>
     )
