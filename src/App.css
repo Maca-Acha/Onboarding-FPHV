@@ -2,12 +2,17 @@
   margin: 0;
   padding: 0;
 }
-/* TIPOGRAFIAS */
+/* TEXTOS */
 .titles{
   font-family: 'Montserrat';
   font-style: normal;
   text-align: center;
   color: rgb(0,0,0,1);
+}
+.texto-btn{
+  color: #A61A32;
+  align-self: center;
+  transition: .4s;
 }
 
 /* BACK DE PANTALLAS */
@@ -38,18 +43,17 @@
 
 }
 .button-comenzar{
-  color: #A61A32;
   padding: 1.3rem ;
   background: #F9F9F9;
   border: 2.58582px solid #000000;
   border-radius: 12.0672px;
-  transition: .5s;
+  transition: .4s;
 }
 .button-comenzar:hover{
   color: #401D8A !important;
   border: 2.58582px solid #000000 !important;
   box-shadow: 3.44776px 3.44776px 0px #000000 !important;
-  transition: .5s;
+  transition: .4s;
 }
 .btn-volver{
   color: #A61A32;
@@ -62,16 +66,16 @@
   color: #A61A32;
   padding-left: 1vw;
   padding-right: 1vw;
-  transition: .5s;
+  transition: .4s;
 }
 .btn-volver:hover, .volver:hover{
   color: #401D8A;
-  transition: .5s;
+  transition: .4s;
 }
 .volver:hover{
   padding-left: 1.5vw;
   padding-right: .5vw;
-  transition: .5s;
+  transition: .4s;
 }
 .btn-ver-mas{
   color: #070707;
@@ -80,6 +84,29 @@
 .btn-ver-mas:hover{
   color: #A61A32;
   transition: .3s;
+}
+.cont-btn-generals{
+  display: flex;
+  align-content: center;
+}
+.btn-generals{
+  align-items: center;
+  background-color: #F9F9F9;
+  border: #000 solid 3px;
+  border-radius: 50%;
+  width: 180px;
+  height: 180px;
+  display: flex;
+  justify-content: center;
+  transition: .4s;
+}
+.btn-generals:hover{
+  filter: drop-shadow(6px 6px 0px #000000);
+  transition: .4s;
+}
+.btn-generals:hover .texto-btn{
+  color: #401D8A;
+  transition: .4s;
 }
 
 /* HOME */

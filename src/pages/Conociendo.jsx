@@ -13,10 +13,12 @@ export default function Conociendo() {
         <div className='back-white'>
             <div className="cont info-home">
                 <h2 className="titles">Conociendo la Fundación</h2>
-                <div>
+                <div className="cont-btn-generals">
                     {btns_conociendo.map(btn => {
                         return(
-                            <Link className="btn-generales" to={btn.path} key={btn.id}>{btn.nombre}</Link>
+                            <div className="btn-generals">
+                                <Link className="texto-btn" to={btn.path} key={btn.id}>{btn.nombre}</Link>
+                            </div>
                         )
                     })}
                 </div>
