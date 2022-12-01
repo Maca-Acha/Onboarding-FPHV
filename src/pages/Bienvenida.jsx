@@ -11,8 +11,8 @@ export default function Bienvenida() {
                         <Link to='/' className="volver">Volver</Link>
                     </div>
                 </div>
-                <div className='info-home'>
-                    <h2 className="titles">¡Te invitamos a ver este video institucional de la Fundación Pro Humanae Vitae!</h2>
+                <div className='info-home' >
+                    <h2 className="titles" onMouseEnter={()=> console.log("entre")} onMouseLeave={()=>console.log("sali")}>¡Te invitamos a ver este video institucional de la Fundación Pro Humanae Vitae!</h2>
                     <img className='video'/>
                 </div>
                 <div className='cont-button-home'>

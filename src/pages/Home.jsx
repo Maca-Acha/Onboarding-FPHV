@@ -8,7 +8,7 @@ export default function Home() {
                 <div className='cont cont-home'>
                     <div className='space'></div>
                     <div className='info-home'>
-                        <h1 className='titles'>Te damos la bienvenida a</h1>
+                        <h1 className='titles title-home'>Te damos la bienvenida a</h1>
                         <img alt="logo-horizontal" src={logo} className="logo-horizontal" />
                         <img alt="ilustracion" src={ilustracion} className="ilustracion-intro" />
                     </div>

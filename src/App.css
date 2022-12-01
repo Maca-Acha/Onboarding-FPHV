@@ -1,6 +1,7 @@
 *{
   margin: 0;
   padding: 0;
+  
 }
 /* ---------- TEXTOS ---------- */
 .titles{
@@ -9,10 +10,22 @@
   text-align: center;
   color: rgb(0,0,0,1);
 }
+.title-home{
+  font-size: 44px;
+}
 .texto-btn{
   color: #A61A32;
   align-self: center;
   transition: .4s;
+}
+.text{
+  font-family: 'Montserrat';
+  font-style: normal;
+  text-align:start;
+  color: rgb(0,0,0,1);
+}
+.text-body{
+  color: #292929;
 }
 
 /* ---------- BACK DE PANTALLAS ---------- */
@@ -24,9 +37,9 @@
   justify-content: center;
 }
 .cont{
-  background-color: #FAF6EB;
+  background-color: #eeee;
   width: 1307px;
-  height: 680px;
+  height: 611px;
   border-radius: 4rem;
   border: #000 solid 6px;
   box-shadow: 8px 8px 0px #000000;
@@ -49,9 +62,21 @@
   border-radius: 12.0672px;
   transition: .4s;
 }
-.button-comenzar:hover{
+.button-participar{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 13.791px 8.6194px;
+  gap: 8.62px;
+  isolation: isolate;
+
+  background: #F9F9F9;
+  border: 2.58582px solid #000000;
+  border-radius: 12.0672px;
+  transition: .4s;
+}
+.button-comenzar:hover, .button-participar:hover{
   color: #401D8A !important;
-  border: 2.58582px solid #000000 !important;
   box-shadow: 3.44776px 3.44776px 0px #000000 !important;
   transition: .4s;
 }
@@ -76,6 +101,11 @@
   padding-left: 1.5vw;
   padding-right: .5vw;
   transition: .4s;
+}
+.btn-participamos{
+  display: flex;
+  justify-content: flex-start;
+  padding-left: 64px !important;
 }
 .btn-ver-mas{
   color: #070707;
@@ -108,15 +138,7 @@
   color: #401D8A;
   transition: .4s;
 }
-.btn-arrow{
-  color: #000;
-  transition: .4s;
-}
-.btn-arrow:hover{
-  color:#401D8A;
-  transform: rotate(0.20rad);
-  transition: .4s;
-}
+
 
 /* ---------- HOME ---------- */
 .cont-home{
@@ -132,7 +154,7 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  height: 670px;
+  height: 600px;
 }
 .logo-horizontal{
   width: 25vw;
@@ -143,17 +165,71 @@
 }
 
 /* ---------- CONOCIENDO LA FUNDACION ---------- */
-.back-conociendo{
-  background-image: url("./assets/fondo_conociendo.png");
-  background-size: contain;
-  background-repeat: no-repeat;
-  width: 1307px;
-  height: 680px;
-}
 .text-conociendo{
   width: 620px;
   font-size: 22px;
   margin-left: 2vw;
   margin-bottom: 5vh;
+}
+.info-conociendo{
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+/* ---------- QUIENES PARTICIPAMOS ---------- */
+.cont-flex{
+  display: flex;
+}
+.pre-btn{
+  align-self: center;
+  margin-right: 22px;
+}
+.cont-participar{
+  display: flex;
+}
+.cont-right{
+  display: flex;
+  flex-direction: column;
+  padding-right: 72px;
+}
+.arrow{
+  align-self: flex-end;
+}
+.arrow svg{
+  transition: .4s;
+  margin-top: 32px;
+}
+.arrow:hover svg{
+  transform: rotate(15deg);
+  transition: .4s;
+}
+.arrow:hover svg>path{
+  fill: #401D8A ;
+  transition: .4s;
+}
+
+/* ---------- QUE HACEMOS ---------- */
+.cont-btn{
+  display: flex;
+}
+.cuatroPilares{
+  display: flex;
+  justify-content: center;
+}
+.cuatro{
+  color: #F3A140;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 250px;
+  line-height: 305px;
+  -webkit-text-stroke: 1px #001B32;
+  text-shadow: 4px 4px 0px #000000;
+}
+.text-hacemos{
+  color: #001B32;
 }
 

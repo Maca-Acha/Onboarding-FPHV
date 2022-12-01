@@ -10,16 +10,16 @@ const btns_conociendo = [
 export default function Conociendo() {
     return (
         <div className='back-white'>
-            <div className="back-conociendo info-home ">
+            <div className="cont info-conociendo ">
                 <Link to='/' >
                     <h2 className="titles">Conociendo la Fundación</h2>
                 </Link>
                 <div className="cont-btn-generals">
-                    {btns_conociendo.map(btn => {
+                    {btns_conociendo.map((btn, index) => {
                         return(
-                            <div className="btn-generals">
+                            <Link className="btn-generals" to={btn.path} style={{marginTop: index %2 ? 100 : 0}}>
                                 <Link className="texto-btn" to={btn.path} key={btn.id}>{btn.nombre}</Link>
-                            </div>
+                            </Link>
                         )
                     })}
                 </div>
