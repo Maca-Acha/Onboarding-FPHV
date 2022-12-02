@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom"
 
 const btns_conociendo = [
-    {nombre: "Quienes Participamos", path:'/quines-participamos', id:'participamos'},
+    {nombre: "Quienes Participamos", path:'/participamos', id:'participamos'},
     {nombre: "Nuestra Historia", path:'/nuestra-historia', id:'historia'},
     {nombre: "Qué hacemos", path:'/que-hacemos', id:'hacemos'},
     {nombre: "Oportunidades", path:'/oportunidades', id:'oportunidades'},
@@ -17,8 +17,8 @@ export default function Conociendo() {
                 <div className="cont-btn-generals">
                     {btns_conociendo.map((btn, index) => {
                         return(
-                            <Link className="btn-generals" to={btn.path} style={{marginTop: index %2 ? 100 : 0}}>
-                                <Link className="texto-btn" to={btn.path} key={btn.id}>{btn.nombre}</Link>
+                            <Link className="btn-generals" to={btn.path} style={{marginTop: index %2 ? 100 : 0}} key={btn.id}>
+                                <p className="texto-btn" to={btn.path} >{btn.nombre}</p>
                             </Link>
                         )
                     })}

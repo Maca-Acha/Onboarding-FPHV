@@ -3,6 +3,7 @@ import Home from './pages/Home.jsx'
 import Bienvenida from './pages/Bienvenida.jsx'
 import Conociendo from './pages/Conociendo.jsx'
 import Participamos from './pages/Participamos.jsx'
+import Quienes from './components/Quienes-participamos'
 import Historia from './pages/Historia'
 import Hacemos from './pages/Hacemos.jsx'
 import Oportunidades from './pages/Oportunidades.jsx'
@@ -18,7 +19,8 @@ function App() {
             <Route path= "/" element= {<Home />} />
             <Route path= "/bienvenida" element= {<Bienvenida />} />
             <Route path= "/conociendo" element= {<Conociendo />} />
-            <Route path= "/quines-participamos" element= {<Participamos />} />
+            <Route path= "/participamos" element= {<Participamos />} />
+            <Route path= "/quienes-participamos" element= {<Quienes />} />
             <Route path= "/nuestra-historia" element= {<Historia />} />
             <Route path= "/que-hacemos" element= {<Hacemos />} />
             <Route path= "/oportunidades" element= {<Oportunidades />} />

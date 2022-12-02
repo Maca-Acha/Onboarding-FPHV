@@ -3,29 +3,54 @@
   padding: 0;
   
 }
+:root{
+  --white:#eeee;
+  --beige:#F9F9F9;
+  --yellow:#F3A140;
+  --red:#A61A32;
+  --green:#51A090;
+  --blue:#401D8A;
+  --darckBlue:#001B32;
+  --gray:#292929;
+  --black:#000000;
+}
+
+
 /* ---------- TEXTOS ---------- */
 .titles{
   font-family: 'Montserrat';
   font-style: normal;
   text-align: center;
-  color: rgb(0,0,0,1);
+  color: var(--black);
 }
 .title-home{
   font-size: 44px;
 }
+.title-participar{
+  font-size: 34px;
+}
 .texto-btn{
-  color: #A61A32;
+  color: var(--red);
   align-self: center;
   transition: .4s;
+  text-align: center;
 }
 .text{
   font-family: 'Montserrat';
   font-style: normal;
   text-align:start;
-  color: rgb(0,0,0,1);
+  color: var(--black);
 }
 .text-body{
-  color: #292929;
+  color: var(--gray);
+  font-family: 'Sitara', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 32px;
+}
+.paragraph{
+  margin-top: 1rem;
 }
 
 /* ---------- BACK DE PANTALLAS ---------- */
@@ -57,7 +82,7 @@
 }
 .button-comenzar{
   padding: 1.3rem ;
-  background: #F9F9F9;
+  background: var(--beige);
   border: 2.58582px solid #000000;
   border-radius: 12.0672px;
   transition: .4s;
@@ -70,31 +95,31 @@
   gap: 8.62px;
   isolation: isolate;
 
-  background: #F9F9F9;
+  background: var(--beige);
   border: 2.58582px solid #000000;
   border-radius: 12.0672px;
   transition: .4s;
 }
 .button-comenzar:hover, .button-participar:hover{
-  color: #401D8A !important;
-  box-shadow: 3.44776px 3.44776px 0px #000000 !important;
+  color: var(--blue) !important;
+  box-shadow: 3.44776px 3.44776px 0px var(--black) !important;
   transition: .4s;
 }
 .btn-volver{
-  color: #A61A32;
+  color: var(--red);
   display: flex ;
   align-items: center;
   justify-content: center;
   margin-top: 4vh;
 }
 .volver{
-  color: #A61A32;
+  color: var(--red);
   padding-left: 1vw;
   padding-right: 1vw;
   transition: .4s;
 }
 .btn-volver:hover, .volver:hover{
-  color: #401D8A;
+  color: var(--blue);
   transition: .4s;
 }
 .volver:hover{
@@ -108,11 +133,11 @@
   padding-left: 64px !important;
 }
 .btn-ver-mas{
-  color: #070707;
+  color: var(--darckBlue);
   transition: .3s;
 }
 .btn-ver-mas:hover{
-  color: #A61A32;
+  color: var(--red);
   transition: .3s;
 }
 .cont-btn-generals{
@@ -121,7 +146,7 @@
 }
 .btn-generals{
   align-items: center;
-  background-color: #F9F9F9;
+  background-color: var(--beige);
   border: #000 solid 3px;
   border-radius: 50%;
   width: 180px;
@@ -135,7 +160,7 @@
   transition: .4s;
 }
 .btn-generals:hover .texto-btn{
-  color: #401D8A;
+  color: var(--blue);
   transition: .4s;
 }
 
@@ -177,9 +202,10 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  height: 600px;
 }
 
-/* ---------- QUIENES PARTICIPAMOS ---------- */
+/* ---------- PARTICIPAMOS ---------- */
 .cont-flex{
   display: flex;
 }
@@ -190,10 +216,24 @@
 .cont-participar{
   display: flex;
 }
-.cont-right{
+.cont-right-participar{
   display: flex;
   flex-direction: column;
   padding-right: 72px;
+}
+.cont-left-participar{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  padding-left: 64px;
+  padding-top: 36px;
+}
+.title-participar{
+  align-self: flex-start;
+}
+.text-body-participar{
+  display: flex;
+  flex-direction: column;
 }
 .arrow{
   align-self: flex-end;
@@ -207,8 +247,23 @@
   transition: .4s;
 }
 .arrow:hover svg>path{
-  fill: #401D8A ;
+  fill: var(--blue) ;
   transition: .4s;
+}
+
+/* ---------- QUIENES PARTICIPAMOS ---------- */
+.cont-quienes-participamos{  
+  display: flex;
+  flex-direction: column;
+}
+.cont-btn-quienes{
+  align-self: center;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+}
+.ilustracion-quienes{
+  width: 310px;
 }
 
 /* ---------- QUE HACEMOS ---------- */
@@ -220,16 +275,15 @@
   justify-content: center;
 }
 .cuatro{
-  color: #F3A140;
+  color: var(--yellow);
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 700;
   font-size: 250px;
   line-height: 305px;
-  -webkit-text-stroke: 1px #001B32;
+  -webkit-text-stroke: 1px var(--darckBlue);
   text-shadow: 4px 4px 0px #000000;
 }
 .text-hacemos{
-  color: #001B32;
+  color: var(--darckBlue);
 }
-
