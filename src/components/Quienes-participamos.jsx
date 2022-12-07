@@ -17,16 +17,18 @@ export default function QuienesParticipamos() {
                     <IoIosArrowBack />
                     <Link to='/Conociendo' className="volver">Conociendo la Fundación</Link>
                 </div>
-                <h2 className="titles title-participar">Quienes participamos</h2>
+                <h2 className="titles title-participar title-quienes">Quienes participamos</h2>
                 <div>
-                    <div className="cont-btn-generals cont-btn-quienes">
-                        {btns_participamos.map((btn) => {
-                            return(
-                                <Link className="btn-generals" to={btn.path} key={btn.id}>
-                                    <p className="texto-btn" to={btn.path} >{btn.nombre}</p>
-                                </Link>
-                            )
-                        })}
+                    <div className='container-quienes'>
+                        <div className="cont-btn-generals cont-btn-quienes">
+                            {btns_participamos.map((btn) => {
+                                return(
+                                    <Link className="btn-generals" to={btn.path} key={btn.id}>
+                                        <p className="texto-btn" to={btn.path} >{btn.nombre}</p>
+                                    </Link>
+                                )
+                            })}
+                        </div>
                     </div>
                     <img className='ilustracion-quienes' src={ilustracion} />
                 </div>

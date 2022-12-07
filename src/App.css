@@ -26,8 +26,13 @@
 .title-home{
   font-size: 44px;
 }
-.title-participar{
+.title-participar, .title-organigrama{
   font-size: 34px;
+  align-self: flex-start;
+}
+.title-organigrama{
+  padding-bottom: 77px;
+  margin-left: 64px;
 }
 .texto-btn{
   color: var(--red);
@@ -52,6 +57,19 @@
 .paragraph{
   margin-top: 1rem;
 }
+/* .back-title-partners{
+  background: var(--green);
+  border-radius: 12px;
+  padding: 10px 22px;
+} */
+.title-partners{
+  font-weight: 700;
+  font-size: 26px;
+  color: #FFFFFF;
+  background: var(--green);
+  border-radius: 12px;
+  padding: 10px 22px;
+}
 
 /* ---------- BACK DE PANTALLAS ---------- */
 .back-white{
@@ -61,6 +79,22 @@
   display: flex;
   justify-content: center;
 }
+.back-white-organigrama{
+  background-color: #ffff;
+  width: 98.9vw;
+  height: 950px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
+.back-white-partners{
+  background-color: #ffff;
+  width: 98.9vw;
+  height: 1600px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 50px;
+}
 .cont{
   background-color: #eeee;
   width: 1307px;
@@ -68,6 +102,17 @@
   border-radius: 4rem;
   border: #000 solid 6px;
   box-shadow: 8px 8px 0px #000000;
+  margin-top: 1vh;
+}
+.cont-largo{  
+  display: flex;
+  flex-direction: column;
+  background-color: var(--beige);
+  width: 1307px;
+  height: auto;
+  border-radius: 4rem;
+  border: var(--black) solid 6px;
+  box-shadow: 8px 8px 0px var(--black);
   margin-top: 1vh;
 }
 
@@ -143,6 +188,8 @@
 .cont-btn-generals{
   display: flex;
   align-content: center;
+  width: 960px;
+  justify-content: space-between;
 }
 .btn-generals{
   align-items: center;
@@ -163,7 +210,17 @@
   color: var(--blue);
   transition: .4s;
 }
-
+.cont-button-nuestroAdn{
+  display: flex;
+  justify-content: flex-end;
+}
+.button-adn{
+  padding-bottom: 38px;
+}
+.btn-nuestro-adn{
+  padding-right: 71px;
+  padding-bottom: 38px;
+}
 
 /* ---------- HOME ---------- */
 .cont-home{
@@ -228,9 +285,7 @@
   padding-left: 64px;
   padding-top: 36px;
 }
-.title-participar{
-  align-self: flex-start;
-}
+
 .text-body-participar{
   display: flex;
   flex-direction: column;
@@ -252,6 +307,22 @@
 }
 
 /* ---------- QUIENES PARTICIPAMOS ---------- */
+.title-quienes{
+  margin-left: 64px;
+  position: absolute;
+  width: 392px;
+  height: 41px;
+  top: 100px
+}
+.container-quienes{
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  width: 1300px;
+  height: 180px;
+
+  top: 200px;
+}
 .cont-quienes-participamos{  
   display: flex;
   flex-direction: column;
@@ -266,6 +337,79 @@
   width: 310px;
 }
 
+/* ---------- ORGANIGRAMA ---------- */
+
+.cont-title-organigrama{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.organigrama{
+  height: 645px;
+}
+
+/* ---------- NUESTRO ADN ---------- */
+.cont-nuestro-adn{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.title-adn{
+  align-self: flex-start;
+  margin-left: 64px;
+  margin-bottom: 32px;
+}
+.cont-adn{
+  align-self: center;
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(153px, auto);
+}
+.back-adn{
+  background-color: #FFFF;
+  border: var(--blue) solid 2px;
+  border-radius: 45px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.img-adn{
+  align-self: center;
+}
+.text-adn{
+  align-items: flex-end;
+  font-size: 20px;
+  font-weight: bold;
+  color: var(--darckBlue);
+  text-align: center;
+}
+
+/* ---------- PARTNERS ---------- */
+.cont-benefactores{
+  display: flex;
+}
+.cont-camaras{
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(153px, auto);
+}
+.cont-academias{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 10px;
+}
+.logo-partners{
+  height: 145px;
+}
+#construya{
+  width: 257px;
+}
+#puntoApunto{
+  width: 300px;
+}
 /* ---------- QUE HACEMOS ---------- */
 .cont-btn{
   display: flex;

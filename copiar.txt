@@ -1,8 +1,15 @@
+import {Link} from 'react-router-dom'
+import { IoIosArrowBack} from "react-icons/io";
+
 export default function Conociendo() {
     return (
         <div className='back-white'>
             <div className="cont cont-home">
-                
+                <div className="btn-volver btn-participamos">
+                    <IoIosArrowBack />
+                    <Link to='/Conociendo' className="volver">Conociendo la Fundación</Link>
+                </div>
+                <h2 className="titles title-participar">Quienes participamos</h2>
             </div>
         </div>
     )
